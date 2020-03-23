@@ -3,7 +3,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
   toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
-
+const toDoList__btn = "toDoList__btn";
 let toDos = [];
 
 //todoList 내용 삭제
@@ -41,7 +41,8 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDos.length + 1;
 
-  span.innerText = text;
+  span.innerText = ` ${newId} : ${text}`;
+  delBtn.classList.add(toDoList__btn);
   delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteToDo);
 

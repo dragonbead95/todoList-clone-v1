@@ -28,7 +28,7 @@ function askForName() {
 function paintGretting(text) {
   form.classList.remove(SHOWING_CN); //입력창을 보이지 않게 제거한다.
   gretting.classList.add(SHOWING_CN); //헤더 요소를 보이게 추가한다.
-  gretting.innerText = `Hello ${text}`; //가공된 문자열값을 넣어서 보여준다.
+  gretting.innerText = `${text}`; //가공된 문자열값을 넣어서 보여준다.
 }
 
 //이름 출력

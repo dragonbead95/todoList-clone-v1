@@ -3,29 +3,36 @@
   <head>
     <title>Something</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!--시계-->
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
+    <div class="main">
+      <!--시계-->
+      <div class="clock js-clock">
+        <h1 class="clock__title js-title">00:00</h1>
+      </div>
+
+      <!--이름-->
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+
+      <!--TODO LIST 작성-->
+      <h4 class="js-gretting grettings gretting__name"></h4>
+      <form class="todoForm js-toDoForm">
+        <input
+          type="text"
+          class="todoForm__input"
+          placeholder="Write a to do"
+        />
+      </form>
+
+      <!--TODO LIST 출력-->
+      <ul class="toDoList js-toDoList"></ul>
+
+      <span class="weather js-weather"></span>
     </div>
-
-    <!--이름-->
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-
-    <!--TODO LIST 작성-->
-    <h4 class="js-gretting grettings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <!--TODO LIST 출력-->
-    <ul class="js-toDoList"></ul>
-
-    <span class="js-weather"></span>
 
     <!--JS-->
     <script src="clock.js"></script>

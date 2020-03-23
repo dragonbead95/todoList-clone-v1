@@ -1,5 +1,31 @@
+html,
 body {
-  background-color: white;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage {
+  opacity: 0.7;
+}
+
+.clock {
+}
+
+.clock__title {
+  font-size: 120px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -19,8 +45,47 @@ body {
   display: none;
 }
 
+.gretting__name {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.todoForm {
+  margin-bottom: 20px;
+}
+
+.todoForm__input {
+  border: 0px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  height: 35px;
+}
+
+.weather {
+  font-size: 50px;
+}
+
 .showing {
   display: block;
+}
+
+.toDoList {
+  margin-bottom: 20px;
+}
+
+.toDoList > li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.toDoList > li > span {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.toDoList > li > .toDoList__btn {
 }
 @keyframes fadeIn {
   from {
